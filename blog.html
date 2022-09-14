@@ -58,7 +58,32 @@
                         What are the Differences between Global scope and Block scope?
                     </div>
                     <div class="collapse-content">
-                        <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                        <h2 class="text-2xl">Global Scope</h2>
+                        <br>
+                        <p>The Javascript global scope is the context where everything in a Javascript program executes
+                            by default. This scope includes all variables, objects, and references that are not
+                            contained within a customized scope defined by a programmer.
+
+                            Global scope is the entire Javascript execution environment. Any variables assigned without
+                            an explicit scope (using the var, let, or const keywords) automatically become global
+                            variables. The same is true for functions.
+                            In the global scope, any variable can overwrite any other variable at any time. This is why
+                            creating global variables and global functions in Javascript is potentially dangerous. The
+                            Javascript interpreter does not check to make sure that a variable or function name exists,
+                            so you might accidentally overwrite an important built-in Javascript function or property.
+
+                            The Javascript global scope is critical to run programs properly, but developers should
+                            never create global variables or global functions in production code, especially in large
+                            projects. It is not dangerous to create global functions and variables in small, isolated
+                            test cases. Anytime someone else will use your code, using the global scope is a risky
+                            choice.</p>
+                        <br>
+                        <h2 class="text-2xl">Block Scope</h2>
+                        <br>
+                        <p>A block scope is the area within if, switch conditions or for and while loops. Generally
+                            speaking, whenever you see {curly brackets}, it is a block. In ES6, const and let keywords
+                            allow developers to declare variables in the block scope, which means those variables exist
+                            only within the corresponding block.</p>
                     </div>
                 </div>
                 <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
