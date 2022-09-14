@@ -32,7 +32,25 @@
                         What are the Differences between Localstorage and Sessionstorage?
                     </div>
                     <div class="collapse-content">
-                        <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                        <p>A session Storage object for the current origin can be accessed using the read-only
+                            sessionStorage attribute. Similar to local storage, session storage has the advantage that
+                            its contents are deleted when the page session ends, unlike local storage, which keeps its
+                            contents forever.
+                        </p>
+                        <ul class="list-disc list-outside pl-10">
+                            <li>Whenever a document is loaded in a particular tab in the browser, a unique page session
+                                gets created and assigned to that particular tab. That page session is valid only for
+                                that particular tab.</li>
+                            <li>A page session lasts as long as the tab or the browser is open, and survives over page
+                                reloads and restores.</li>
+                            <li>Opening a page in a new tab or window creates a new session with the value of the
+                                top-level browsing context, which differs from how session cookies work.</li>
+                            <li>Opening multiple tabs/windows with the same URL creates sessionStorage for each
+                                tab/window.</li>
+                            <li>Duplicating a tab copies the tab's sessionStorage into the new tab.</li>
+                            <li>Closing a tab/window ends the session and clears objects in sessionStorage.</li>
+                        </ul>
+
                     </div>
                 </div>
                 <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
