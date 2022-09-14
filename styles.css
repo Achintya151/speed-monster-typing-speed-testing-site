@@ -153,13 +153,15 @@ button {
   justify-content: space-around;
 }
 
+
+
 .card {
   width: 100%;
   height: 100%;
   padding: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 50% 30% auto;
+  grid-column-gap: 20px;
   padding: 20px 30px;
   color: white;
   border-radius: 15px;
@@ -191,6 +193,10 @@ button {
   }
 
   .card {
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
   }
 }
