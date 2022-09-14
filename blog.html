@@ -91,7 +91,18 @@
                         How does Javascript event loop works?
                     </div>
                     <div class="collapse-content">
-                        <p>tabindex="0" attribute is necessary to make the div focusable</p>
+
+                        <p>The event loop is a process that waits for the Call Stack to be clear before pushing
+                            callbacks from the Task Queue to the Call Stack. Once the Stack is clear, the event loop
+                            triggers and checks the Task Queue for available callbacks. If there are any, it pushes it
+                            to the Call Stack, waits for the Call Stack to be clear again, and repeats the same process.
+                        </p>
+                        <br>
+                        <img class="h-1/2 w-1/4" src="./event-loop2.png" alt="">
+                        <br>
+                        <p>The above diagram demonstrates the basic workflow between the Event Loop and the Task Queue.
+                        </p>
+
                     </div>
                 </div>
                 <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
